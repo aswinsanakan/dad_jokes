@@ -1,5 +1,7 @@
 # dad_jokes
-[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](http://opensource.org/licenses/MIT) <br/>
+[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](http://opensource.org/licenses/MIT) 
+[![Gem Version](https://badge.fury.io/rb/dad_jokes.svg)](https://badge.fury.io/rb/dad_jokes)
+<br/>
 
 Welcome to <b>Dad Jokes</b>! <br/>
 Generate random dad jokes using this gem.
