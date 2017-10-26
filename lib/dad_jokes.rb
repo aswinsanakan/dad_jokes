@@ -11,21 +11,22 @@ module DadJokes
 
   def self.random
     uri = "/"
-    response = connection.get(uri)
-    parsed_response = parse_response(response.body)
-    joke = parsed_response['joke']
-    id = parsed_response['id']
-    joke
+    get_joke(uri)
   end
 
   def self.fetch(joke_id:)
     uri = "/j/#{joke_id}"
-    response = connection.get(uri)
-    parsed_response = parse_response(response.body)
-    joke = parsed_response['joke']
+    get_joke(uri)
   end
 
   private
+
+  def self.get_joke(uri)
+    response = connection.get(uri)
+    parsed_response = parse_response(response.body)
+    joke = parsed_response['joke']
+    joke
+  end
   
   def self.connection
     Faraday.new(url: API_URL, headers: API_HEADERS)
