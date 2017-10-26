@@ -22,7 +22,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+#### Generate a random Dad joke
+
+``` ruby
+DadJokes.random
+```
+
+Sample Output #1 : ``"Dad, I'm hungry." "Hello, Hungry. I'm Dad."``
+
+Sample Output #2 : ``Why didn’t the skeleton cross the road? Because he had no guts.``
 
 ## Contributing
 
