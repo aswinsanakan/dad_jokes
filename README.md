@@ -1,6 +1,7 @@
 # dad_jokes
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](http://opensource.org/licenses/MIT) 
 [![Gem Version](https://badge.fury.io/rb/dad_jokes.svg)](https://badge.fury.io/rb/dad_jokes)
+[![Gem](https://img.shields.io/gem/dt/dad_jokes.svg?style=flat-square)](https://rubygems.org/gems/dad_jokes)
 <br/>
 
 Welcome to <b>Dad Jokes</b>! <br/>
@@ -24,7 +25,7 @@ Or install it yourself as:
 
 ## Usage
 
-#### Generate a random Dad joke
+#### #1 Generate a random Dad joke
 
 ``` ruby
 DadJokes.random
@@ -33,6 +34,20 @@ DadJokes.random
 Sample Output #1 : ``"Dad, I'm hungry." "Hello, Hungry. I'm Dad."``
 
 Sample Output #2 : ``Why didn’t the skeleton cross the road? Because he had no guts.``
+
+#### #2 Search for Dad jokes
+
+``` ruby
+DadJokes.search(term:, limit:)
+```
+
+* _term:_ 
+   - (**required*) 
+   - Search term goes here
+* _limit:_  
+   - (**optional*)
+   - Set limit for the number of jokes (because, obviously you're tired of laughing!). 
+   - Default : <b>5 jokes</b>
 
 ## Contributing
 
