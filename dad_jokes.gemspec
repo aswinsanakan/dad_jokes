@@ -6,11 +6,11 @@ require 'dad_jokes/version'
 Gem::Specification.new do |spec|
   spec.name          = "dad_jokes"
   spec.version       = DadJokes::VERSION
-  spec.authors       = ["aswinsanakan"]
+  spec.authors       = ["Aswin Sanakan"]
   spec.email         = ["aswinsanakan@gmail.com"]
 
   spec.summary       = %q{Gem to generate random popular Dad Jokes.}
-  spec.description   = %q{Gem to generate random popular Dad Jokes.}
+  spec.description   = %q{Gem to generate random popular Dad Jokes. Features include: Generating jokes, Search for jokes, Save a random joke as image (as .png), etc}
   spec.homepage      = "https://github.com/aswinsanakan/dad_jokes"
   spec.license       = "MIT"
 
@@ -34,8 +34,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "minitest", "~> 5.0"
 
-  spec.add_dependency "json"
-  spec.add_dependency "faraday"
-  spec.add_dependency "faraday_middleware"
-  spec.add_dependency "pry"
+  spec.add_dependency "json", '~> 1.8'
+  spec.add_dependency "faraday", '~> 0.13.1'
+  spec.add_dependency "faraday_middleware", '~> 0.12.2'
 end
